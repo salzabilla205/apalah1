@@ -1,16 +1,10 @@
-// script.js
-async function ambilDataTerbaru() {
-  try {
-    const response = await fetch('/api/terbaru');
-    const data = await response.json();
-    document.getElementById('data').innerText = JSON.stringify(data);
-  } catch (err) {
-    document.getElementById('data').innerText = 'Gagal mengambil data';
-  }
+async function ambilDataESP() {
+  const response = await fetch('/api/esp');
+  const data = await response.json();
+  console.log('📡 Data dari API:', data);
+
+  // contoh menampilkan ke HTML
+  document.getElementById('dataESP').innerText = JSON.stringify(data);
 }
 
-// Ambil data setiap 3 detik
-setInterval(ambilDataTerbaru, 3000);
-
-// Pertama kali langsung ambil
-ambilDataTerbaru();
+setInterval(ambilDataESP, 2000); // Ambil data tiap 2 detik
