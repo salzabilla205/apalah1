@@ -1,17 +1,15 @@
 {
-  "name": "fitur-esc-_-buv",
+  "name": "fitur-buv",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "description": "Monitoring data UAV via ESP and Web",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Zaza",
+  "license": "MIT",
   "dependencies": {
-    "express": "^5.1.0",
-    "socket.io": "^4.8.1"
+    "express": "^4.18.2"
   }
 }
